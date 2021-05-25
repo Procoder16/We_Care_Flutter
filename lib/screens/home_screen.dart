@@ -13,7 +13,15 @@ class HomeScreen extends StatelessWidget {
       ),
       body: SafeArea(
         child: Container(
-          child: Text('Hello World'),
+          child: Text(
+            'Hello World',
+            style: TextStyle(
+              fontFamily: 'AmaticSC',
+              fontSize: 45.0,
+              fontWeight: FontWeight.w900,
+              color: Colors.white,
+            ),
+          ),
         ),
       ),
     );

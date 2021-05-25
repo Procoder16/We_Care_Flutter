@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:do_good_flutter/screens/home_screen.dart';
 import 'dart:async';
+import 'package:animated_text_kit/animated_text_kit.dart';
 
 void main() {
   runApp(
@@ -33,7 +34,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(
-      Duration(seconds: 3),
+      Duration(seconds: 4),
       () {
         Navigator.of(context).pushReplacement(
           MaterialPageRoute(
@@ -52,16 +53,22 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(
-              'images/icon.png',
-              height: 300.0,
+            TypewriterAnimatedTextKit(
+              text: ['Do GooD'],
+              textStyle: TextStyle(
+                fontFamily: 'Kaushan',
+                fontSize: 65.0,
+                fontWeight: FontWeight.w600,
+                color: Colors.white,
+              ),
             ),
             SizedBox(
               height: 40.0,
             ),
-            CircularProgressIndicator(
-              valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
-            )
+            Image.asset(
+              'images/icon.png',
+              height: 300.0,
+            ),
           ],
         ),
       ),
