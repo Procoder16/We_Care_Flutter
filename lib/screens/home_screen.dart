@@ -59,6 +59,9 @@ class CustomDrawer extends StatelessWidget {
       height: mediaQuery.size.height,
       child: Column(
         children: <Widget>[
+          SizedBox(
+            height: 20.0,
+          ),
           Container(
             width: double.infinity,
             height: 200,
@@ -94,7 +97,7 @@ class CustomDrawer extends StatelessWidget {
               debugPrint("Tapped Profile");
             },
             leading: Icon(
-              Icons.person,
+              Icons.info_outlined,
               color: Color(0xFF11212F),
               size: 30.0,
             ),
@@ -112,7 +115,7 @@ class CustomDrawer extends StatelessWidget {
               debugPrint("Tapped settings");
             },
             leading: Icon(
-              Icons.settings,
+              Icons.people,
               color: Color(0xFF11212F),
               size: 30.0,
             ),
@@ -130,7 +133,7 @@ class CustomDrawer extends StatelessWidget {
               debugPrint("Tapped Payments");
             },
             leading: Icon(
-              Icons.payment,
+              Icons.business_rounded,
               color: Color(0xFF11212F),
               size: 30.0,
             ),
@@ -148,7 +151,7 @@ class CustomDrawer extends StatelessWidget {
               debugPrint("Tapped Notifications");
             },
             leading: Icon(
-              Icons.notifications,
+              Icons.person,
               color: Color(0xFF11212F),
               size: 30.0,
             ),
