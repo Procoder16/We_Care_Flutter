@@ -60,23 +60,35 @@ class CustomDrawer extends StatelessWidget {
       child: Column(
         children: <Widget>[
           Container(
-              width: double.infinity,
-              height: 200,
-              color: Colors.grey.withAlpha(20),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Image.asset(
-                    "assets/rps_logo.png",
-                    width: 100,
-                    height: 100,
+            width: double.infinity,
+            height: 200,
+            color: Colors.grey.withAlpha(20),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Image.asset(
+                  "images/icon.png",
+                  width: 120,
+                  height: 120,
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Text(
+                  "We Care",
+                  style: TextStyle(
+                    color: Color(0xFF11212F),
+                    fontFamily: 'Kaushan',
+                    fontSize: 35.0,
+                    fontWeight: FontWeight.bold,
                   ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Text("RetroPortal Studio")
-                ],
-              )),
+                )
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 30.0,
+          ),
           ListTile(
             onTap: () {
               debugPrint("Tapped Profile");
