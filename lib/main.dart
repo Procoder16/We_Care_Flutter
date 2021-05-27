@@ -54,7 +54,7 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             TypewriterAnimatedTextKit(
-              text: ['Do GooD'],
+              text: ['We Care'],
               textStyle: TextStyle(
                 fontFamily: 'Kaushan',
                 fontSize: 65.0,
