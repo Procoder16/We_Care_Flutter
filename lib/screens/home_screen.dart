@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -10,6 +8,22 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Color(0xFF11212F),
         centerTitle: true,
         title: Text('Home Page'),
+        leading: Padding(
+          padding: EdgeInsets.all(8.0),
+          child: GestureDetector(
+            child: Container(
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: Color(0xFF11512F),
+              ),
+              child: Icon(
+                Icons.menu,
+                size: 30.0,
+              ),
+            ),
+            onTap: () {},
+          ),
+        ),
       ),
       body: SafeArea(
         child: Container(
