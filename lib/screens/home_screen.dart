@@ -4,26 +4,16 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        child: Icon(
+          Icons.menu,
+          size: 30,
+        ),
+      ),
       appBar: AppBar(
         backgroundColor: Color(0xFF11212F),
         centerTitle: true,
         title: Text('Home Page'),
-        leading: Padding(
-          padding: EdgeInsets.all(8.0),
-          child: GestureDetector(
-            child: Container(
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: Color(0xFF11512F),
-              ),
-              child: Icon(
-                Icons.menu,
-                size: 30.0,
-              ),
-            ),
-            onTap: () {},
-          ),
-        ),
       ),
       body: SafeArea(
         child: Container(
