@@ -62,31 +62,33 @@ class CustomDrawer extends StatelessWidget {
           SizedBox(
             height: 20.0,
           ),
-          Container(
-            width: double.infinity,
-            height: 200,
-            color: Colors.grey.withAlpha(20),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Image.asset(
-                  "images/icon.png",
-                  width: 120,
-                  height: 120,
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                Text(
-                  "We Care",
-                  style: TextStyle(
-                    color: Color(0xFF11212F),
-                    fontFamily: 'Kaushan',
-                    fontSize: 35.0,
-                    fontWeight: FontWeight.bold,
+          Expanded(
+            child: Container(
+              width: double.infinity,
+              height: 200,
+              color: Colors.grey.withAlpha(20),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Image.asset(
+                    "images/icon.png",
+                    width: 120,
+                    height: 120,
                   ),
-                )
-              ],
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    "We Care",
+                    style: TextStyle(
+                      color: Color(0xFF11212F),
+                      fontFamily: 'Kaushan',
+                      fontSize: 35.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  )
+                ],
+              ),
             ),
           ),
           SizedBox(
@@ -158,6 +160,27 @@ class CustomDrawer extends StatelessWidget {
             title: Text(
               "Developer's Page",
               style: kSideBarText,
+            ),
+          ),
+          Expanded(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                FlatButton(
+                  onPressed: () {},
+                  child: Text(
+                    'DONATE',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                    ),
+                  ),
+                  color: Color(0xFF11212F),
+                  minWidth: double.infinity,
+                ),
+                SizedBox(
+                  height: 35.0,
+                ),
+              ],
             ),
           ),
         ],
