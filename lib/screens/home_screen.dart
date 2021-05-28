@@ -1,7 +1,11 @@
+import 'package:do_good_flutter/screens/contact_us.dart';
+import 'package:do_good_flutter/screens/our_motto.dart';
+import 'package:do_good_flutter/screens/our_team.dart';
 import 'package:flutter/material.dart';
 import 'package:foldable_sidebar/foldable_sidebar.dart';
 import 'package:do_good_flutter/utilities/homeScreenContents.dart';
 import 'package:do_good_flutter/utilities/constants.dart';
+import 'package:do_good_flutter/screens/developers_page.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -96,7 +100,12 @@ class CustomDrawer extends StatelessWidget {
           ),
           ListTile(
             onTap: () {
-              debugPrint("Tapped Profile");
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => OurMotto(),
+                ),
+              );
             },
             leading: Icon(
               Icons.info_outlined,
@@ -114,7 +123,12 @@ class CustomDrawer extends StatelessWidget {
           ),
           ListTile(
             onTap: () {
-              debugPrint("Tapped settings");
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => OurTeam(),
+                ),
+              );
             },
             leading: Icon(
               Icons.people,
@@ -132,7 +146,12 @@ class CustomDrawer extends StatelessWidget {
           ),
           ListTile(
             onTap: () {
-              debugPrint("Tapped Payments");
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ContactUs(),
+                ),
+              );
             },
             leading: Icon(
               Icons.business_rounded,
@@ -150,7 +169,12 @@ class CustomDrawer extends StatelessWidget {
           ),
           ListTile(
             onTap: () {
-              Navigator.push(context, )
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DevelopersPage(),
+                ),
+              );
             },
             leading: Icon(
               Icons.person,
