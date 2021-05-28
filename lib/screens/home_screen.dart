@@ -48,7 +48,13 @@ class _HomeScreenState extends State<HomeScreen> {
         body: FoldableSidebarBuilder(
           drawerBackgroundColor: Color(0xFF11212F),
           status: status,
-          drawer: CustomDrawer(),
+          drawer: CustomDrawer(
+            closeDrawer: () {
+              setState(() {
+                status = FSBStatus.FSB_CLOSE;
+              });
+            },
+          ),
           screenContents: HomeScreenContents(),
         ),
       ),
@@ -113,6 +119,7 @@ class CustomDrawer extends StatelessWidget {
                   builder: (context) => OurMotto(),
                 ),
               );
+              closeDrawer();
             },
             leading: Icon(
               Icons.info_outlined,
@@ -136,6 +143,7 @@ class CustomDrawer extends StatelessWidget {
                   builder: (context) => OurTeam(),
                 ),
               );
+              closeDrawer();
             },
             leading: Icon(
               Icons.people,
@@ -159,6 +167,7 @@ class CustomDrawer extends StatelessWidget {
                   builder: (context) => ContactUs(),
                 ),
               );
+              closeDrawer();
             },
             leading: Icon(
               Icons.business_rounded,
@@ -182,6 +191,7 @@ class CustomDrawer extends StatelessWidget {
                   builder: (context) => DevelopersPage(),
                 ),
               );
+              closeDrawer();
             },
             leading: Icon(
               Icons.person,
@@ -205,6 +215,7 @@ class CustomDrawer extends StatelessWidget {
                         builder: (context) => DonationPage(),
                       ),
                     );
+                    closeDrawer();
                   },
                   child: Text(
                     'DONATE',
