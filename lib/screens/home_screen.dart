@@ -1,4 +1,5 @@
 import 'package:do_good_flutter/screens/contact_us.dart';
+import 'package:do_good_flutter/screens/donation_page.dart';
 import 'package:do_good_flutter/screens/our_motto.dart';
 import 'package:do_good_flutter/screens/our_team.dart';
 import 'package:flutter/material.dart';
@@ -191,7 +192,14 @@ class CustomDrawer extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 FlatButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => DonationPage(),
+                      ),
+                    );
+                  },
                   child: Text(
                     'DONATE',
                     style: TextStyle(
