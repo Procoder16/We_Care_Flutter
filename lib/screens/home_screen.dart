@@ -150,7 +150,7 @@ class CustomDrawer extends StatelessWidget {
           ),
           ListTile(
             onTap: () {
-              debugPrint("Tapped Notifications");
+              Navigator.push(context, )
             },
             leading: Icon(
               Icons.person,
