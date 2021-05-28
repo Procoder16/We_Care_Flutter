@@ -35,9 +35,15 @@ class _HomeScreenState extends State<HomeScreen> {
           },
         ),
         appBar: AppBar(
-          backgroundColor: Color(0xFF11212F),
+          backgroundColor: Color(0xFF84EFD5),
           centerTitle: true,
-          title: Text('Home Page'),
+          title: Text(
+            'Home Page',
+            style: TextStyle(
+              color: Color(0xFF11212F),
+              fontSize: 22.0,
+            ),
+          ),
         ),
         body: FoldableSidebarBuilder(
           drawerBackgroundColor: Color(0xFF11212F),
