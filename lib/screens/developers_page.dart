@@ -24,6 +24,26 @@ class DevelopersPage extends StatelessWidget {
             fontSize: 22.0,
           ),
         ),
+        actions: [
+          Container(
+            child: Padding(
+              padding: EdgeInsets.all(5.0),
+              child: Image(
+                image: AssetImage('images/icon.png'),
+              ),
+            ),
+          ),
+          SizedBox(
+            width: 10.0,
+          ),
+        ],
+      ),
+      body: Center(
+        child: Container(
+          child: Column(
+            children: [],
+          ),
+        ),
       ),
     );
   }
