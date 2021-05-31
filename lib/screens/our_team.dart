@@ -38,6 +38,20 @@ class OurTeam extends StatelessWidget {
           ),
         ],
       ),
+      body: Container(
+        child: Column(
+          children: [
+            Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(200.0),
+              ),
+              child: Image(
+                image: AssetImage('images/group.png'),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
