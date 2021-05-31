@@ -1,6 +1,6 @@
 import 'package:do_good_flutter/screens/contact_us.dart';
 import 'package:do_good_flutter/screens/donation_page.dart';
-import 'package:do_good_flutter/screens/our_motto.dart';
+import 'package:do_good_flutter/screens/about_us.dart';
 import 'package:do_good_flutter/screens/our_team.dart';
 import 'package:flutter/material.dart';
 import 'package:foldable_sidebar/foldable_sidebar.dart';
@@ -128,7 +128,7 @@ class CustomDrawer extends StatelessWidget {
               size: 30.0,
             ),
             title: Text(
-              "Our Motto",
+              "About Us",
               style: kSideBarText,
             ),
           ),

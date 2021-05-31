@@ -20,7 +20,7 @@ class OurMotto extends StatelessWidget {
         backgroundColor: Color(0xFF84EFD5),
         centerTitle: true,
         title: Text(
-          "Our Motto",
+          "About Us",
           style: TextStyle(
             color: Color(0xFF11212F),
             fontSize: 22.0,
