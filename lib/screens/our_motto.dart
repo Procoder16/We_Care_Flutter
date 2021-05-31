@@ -39,6 +39,22 @@ class OurMotto extends StatelessWidget {
           ),
         ],
       ),
+      body: Container(
+        child: Center(
+          child: Column(
+            children: [
+              Text(
+                'We Care',
+                style: TextStyle(
+                  fontFamily: 'Kaushan',
+                  fontSize: 45.0,
+                  color: Color(0xFF84EFD5),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }

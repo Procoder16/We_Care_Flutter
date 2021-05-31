@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.do_good_flutter">
+
    <application
         android:label="We Care"
         android:icon="@mipmap/ic_launcher">
