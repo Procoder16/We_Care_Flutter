@@ -52,14 +52,14 @@ class OurMotto extends StatelessWidget {
                   color: Color(0xFF84EFD5),
                 ),
               ),
-              SizedBox(
-                height: 15.0,
-              ),
               Expanded(
                 child: Padding(
                   padding: EdgeInsets.all(10.0),
                   child: ListView(
                     children: [
+                      SizedBox(
+                        height: 20.0,
+                      ),
                       Column(
                         children: [
                           Text(
@@ -80,6 +80,15 @@ class OurMotto extends StatelessWidget {
                           ),
                           Text(
                             'From then on, we donate clothes, food, essentials like sanitary pad, etc. to these people and also to poor people who approach us for help and to those who can\'t afford these necessary things. We even organise blood donation camp so that people can come forward to donate blood that can literally save someone\'s life.',
+                            style: TextStyle(
+                              fontSize: 18.0,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 10.0,
+                          ),
+                          Text(
+                            'When we started as a team, we were not that large and famous as a team. We were just 7 of us. Now we are a much larger team of about 100 individuals and even, we have gained some popularity and recognition as an organisation and we need this recognition, not to establish ourselves as a celebrity, but for the establishment of this organisation so that more and more people get to know about us and help us in this noble cause.',
                             style: TextStyle(
                               fontSize: 18.0,
                             ),
