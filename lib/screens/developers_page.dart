@@ -83,7 +83,7 @@ class DevelopersPage extends StatelessWidget {
                   child: Column(
                     children: [
                       SizedBox(
-                        height: 25.0,
+                        height: 45.0,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -139,8 +139,7 @@ class DevelopersPage extends StatelessWidget {
                               size: 55.0,
                             ),
                             onTap: () async {
-                              const url =
-                                  'https://myfitnessblogz.blogspot.com/p/about.html';
+                              const url = 'https://github.com/Procoder16';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
