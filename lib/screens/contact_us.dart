@@ -38,6 +38,27 @@ class ContactUs extends StatelessWidget {
           ),
         ],
       ),
+      body: Center(
+        child: Container(
+          child: Column(
+            children: [
+              SizedBox(
+                height: 10.0,
+              ),
+              Text(
+                'Want to contact for further information?',
+                style: TextStyle(
+                  fontSize: 20.0,
+                ),
+              ),
+              SizedBox(
+                height: 10.0,
+              ),
+              Column(),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
