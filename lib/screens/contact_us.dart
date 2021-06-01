@@ -104,6 +104,24 @@ class ContactUs extends StatelessWidget {
                             }
                           },
                         ),
+                        SizedBox(
+                          height: 20.0,
+                        ),
+                        GestureDetector(
+                          child: Icon(
+                            FontAwesomeIcons.twitter,
+                            size: 60.0,
+                          ),
+                          onTap: () async {
+                            const url =
+                                'https://twitter.com/SoumikM40838957?s=09';
+                            if (await canLaunch(url)) {
+                              await launch(url);
+                            } else {
+                              throw 'Could not launch $url';
+                            }
+                          },
+                        ),
                       ],
                     ),
                   ],
