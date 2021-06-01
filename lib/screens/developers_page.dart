@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class DevelopersPage extends StatelessWidget {
   @override
@@ -84,49 +85,94 @@ class DevelopersPage extends StatelessWidget {
                       SizedBox(
                         height: 25.0,
                       ),
-                      RichText(
-                        text: TextSpan(
-                          children: [
-                            TextSpan(
-                              text: "Soumik's LinkedIn Profile",
-                              style:
-                                  TextStyle(fontSize: 20.0, color: Colors.blue),
-                              recognizer: TapGestureRecognizer()
-                                ..onTap = () async {
-                                  var url =
-                                      "https://www.linkedin.com/in/soumik-mukherjee-438b451b5/";
-                                  if (await canLaunch(url)) {
-                                    await launch(url);
-                                  } else {
-                                    throw "Failed to open LinkedIn";
-                                  }
-                                },
-                            )
-                          ],
-                        ),
-                      ),
-                      SizedBox(
-                        height: 10.0,
-                      ),
-                      RichText(
-                        text: TextSpan(
-                          children: [
-                            TextSpan(
-                              text: "Soumik's GitHub Profile",
-                              style:
-                                  TextStyle(fontSize: 20.0, color: Colors.blue),
-                              recognizer: TapGestureRecognizer()
-                                ..onTap = () async {
-                                  var url = "https://github.com/Procoder16";
-                                  if (await canLaunch(url)) {
-                                    await launch(url);
-                                  } else {
-                                    throw "Failed to open GitHub";
-                                  }
-                                },
-                            )
-                          ],
-                        ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          GestureDetector(
+                            child: Icon(
+                              FontAwesomeIcons.instagram,
+                              size: 60.0,
+                            ),
+                            onTap: () async {
+                              const url =
+                                  'https://www.instagram.com/blogs_by_soumik/?hl=en';
+                              if (await canLaunch(url)) {
+                                await launch(url);
+                              } else {
+                                throw 'Could not launch $url';
+                              }
+                            },
+                          ),
+                          GestureDetector(
+                            child: Icon(
+                              FontAwesomeIcons.linkedin,
+                              size: 60.0,
+                            ),
+                            onTap: () async {
+                              const url =
+                                  'https://www.linkedin.com/in/soumik-mukherjee-438b451b5/';
+                              if (await canLaunch(url)) {
+                                await launch(url);
+                              } else {
+                                throw 'Could not launch $url';
+                              }
+                            },
+                          ),
+                          GestureDetector(
+                            child: Icon(
+                              FontAwesomeIcons.twitter,
+                              size: 60.0,
+                            ),
+                            onTap: () async {
+                              const url =
+                                  'https://twitter.com/SoumikM40838957?s=09';
+                              if (await canLaunch(url)) {
+                                await launch(url);
+                              } else {
+                                throw 'Could not launch $url';
+                              }
+                            },
+                          ),
+                          GestureDetector(
+                            child: Icon(
+                              FontAwesomeIcons.github,
+                              size: 55.0,
+                            ),
+                            onTap: () async {
+                              const url =
+                                  'https://myfitnessblogz.blogspot.com/p/about.html';
+                              if (await canLaunch(url)) {
+                                await launch(url);
+                              } else {
+                                throw 'Could not launch $url';
+                              }
+                            },
+                          ),
+                          GestureDetector(
+                            child: Icon(
+                              Icons.mail_outlined,
+                              size: 65.0,
+                            ),
+                            onTap: () {
+                              launch("mailto:abc123@gmail.com");
+                            },
+                          ),
+                          GestureDetector(
+                            child: Icon(
+                              FontAwesomeIcons.blogger,
+                              size: 60.0,
+                            ),
+                            onTap: () async {
+                              const url =
+                                  'https://myfitnessblogz.blogspot.com/p/about.html';
+                              if (await canLaunch(url)) {
+                                await launch(url);
+                              } else {
+                                throw 'Could not launch $url';
+                              }
+                            },
+                          ),
+                        ],
                       ),
                     ],
                   ),
