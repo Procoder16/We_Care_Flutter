@@ -66,21 +66,44 @@ class ContactUs extends StatelessWidget {
                         fontSize: 18.0,
                       ),
                     ),
+                    SizedBox(
+                      height: 20.0,
+                    ),
                     Column(
                       children: [
-                        IconButton(
-                            icon: Icon(
-                              FontAwesomeIcons.github,
-                              size: 80.0,
-                            ),
-                            onPressed: () async {
-                              const url = 'https://github.com/Procoder16';
-                              if (await canLaunch(url)) {
-                                await launch(url);
-                              } else {
-                                throw 'Could not launch $url';
-                              }
-                            }),
+                        GestureDetector(
+                          child: Icon(
+                            FontAwesomeIcons.instagram,
+                            size: 60.0,
+                          ),
+                          onTap: () async {
+                            const url =
+                                'https://www.instagram.com/blogs_by_soumik/?hl=en';
+                            if (await canLaunch(url)) {
+                              await launch(url);
+                            } else {
+                              throw 'Could not launch $url';
+                            }
+                          },
+                        ),
+                        SizedBox(
+                          height: 20.0,
+                        ),
+                        GestureDetector(
+                          child: Icon(
+                            FontAwesomeIcons.linkedin,
+                            size: 60.0,
+                          ),
+                          onTap: () async {
+                            const url =
+                                'https://www.linkedin.com/in/soumik-mukherjee-438b451b5/';
+                            if (await canLaunch(url)) {
+                              await launch(url);
+                            } else {
+                              throw 'Could not launch $url';
+                            }
+                          },
+                        ),
                       ],
                     ),
                   ],
