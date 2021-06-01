@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ContactUs extends StatelessWidget {
   @override
@@ -52,9 +54,38 @@ class ContactUs extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 10.0,
+                height: 20.0,
               ),
-              Column(),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 10.0),
+                child: Column(
+                  children: [
+                    Text(
+                      'Now, since the time we have started for for this, we have been getting a lot of DMs on various platforms regarding the procedure for joining the organising, what and how to donate and when to donate. People also ask some other doubts that they want to clear. For all of them, here is the list of platforms, where you can contact us directly.',
+                      style: TextStyle(
+                        fontSize: 18.0,
+                      ),
+                    ),
+                    Column(
+                      children: [
+                        IconButton(
+                            icon: Icon(
+                              FontAwesomeIcons.github,
+                              size: 80.0,
+                            ),
+                            onPressed: () async {
+                              const url = 'https://github.com/Procoder16';
+                              if (await canLaunch(url)) {
+                                await launch(url);
+                              } else {
+                                throw 'Could not launch $url';
+                              }
+                            }),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
