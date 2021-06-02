@@ -103,6 +103,7 @@ class _DonationPageState extends State<DonationPage> {
       ),
       body: Container(
         child: SingleChildScrollView(
+          // pixel problem
           child: Center(
             child: Column(
               children: [
