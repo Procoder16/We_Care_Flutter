@@ -1,8 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:do_good_flutter/screens/contact_us.dart';
 import 'package:razorpay_flutter/razorpay_flutter.dart';
+import 'package:toast/toast.dart';
 
-class DonationPage extends StatelessWidget {
+class DonationPage extends StatefulWidget {
+  @override
+  _DonationPageState createState() => _DonationPageState();
+}
+
+class _DonationPageState extends State<DonationPage> {
+  Razorpay razorpay;
+
+  @override
+  void initState() {
+    super.initState();
+    razorpay = new Razorpay();
+    razorpay.on(Razorpay.EVENT_PAYMENT_SUCCESS, handlerPaymentSuccess);
+    razorpay.on(Razorpay.EVENT_PAYMENT_ERROR, handlerErrorFailure);
+    razorpay.on(Razorpay.EVENT_EXTERNAL_WALLET, handlerExternalWallet);
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    razorpay.clear();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
