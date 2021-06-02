@@ -102,104 +102,106 @@ class _DonationPageState extends State<DonationPage> {
         ],
       ),
       body: Container(
-        child: Center(
-          child: Column(
-            children: [
-              SizedBox(
-                height: 10.0,
-              ),
-              Text(
-                'We accept donation in any form. People contact us for donating money, grains, pulses, rice, clothes, spices, etc. Anyone interested to make a contribution from their end please come forward. It would be highly appreciable.',
-                style: TextStyle(
-                  fontSize: 18.0,
+        child: SingleChildScrollView(
+          child: Center(
+            child: Column(
+              children: [
+                SizedBox(
+                  height: 10.0,
                 ),
-              ),
-              SizedBox(
-                height: 30.0,
-              ),
-              Text(
-                'If you want to make your contribution through money, enter the amount and click the button below and you will be taken to the payments gateway.',
-                style: TextStyle(
-                  fontSize: 18.0,
-                ),
-              ),
-              SizedBox(
-                height: 10.0,
-              ),
-              Padding(
-                padding: EdgeInsets.symmetric(
-                  horizontal: 50.0,
-                ),
-                child: TextField(
-                  keyboardType: TextInputType.number,
-                  style: TextStyle(fontSize: 18.0),
-                  controller: textEditingController,
-                  decoration: InputDecoration(
-                    hintText: 'Enter the amount',
+                Text(
+                  'We accept donation in any form. People contact us for donating money, grains, pulses, rice, clothes, spices, etc. Anyone interested to make a contribution from their end please come forward. It would be highly appreciable.',
+                  style: TextStyle(
+                    fontSize: 18.0,
                   ),
                 ),
-              ),
-              SizedBox(height: 10.0),
-              Container(
-                child: RaisedButton(
-                  color: Color(0xFF84EFD5),
-                  child: Text(
-                    'Donate',
-                    style: TextStyle(
-                      fontSize: 18.0,
-                      color: Color(0xFF11212F),
+                SizedBox(
+                  height: 30.0,
+                ),
+                Text(
+                  'If you want to make your contribution through money, enter the amount and click the button below and you will be taken to the payments gateway.',
+                  style: TextStyle(
+                    fontSize: 18.0,
+                  ),
+                ),
+                SizedBox(
+                  height: 10.0,
+                ),
+                Padding(
+                  padding: EdgeInsets.symmetric(
+                    horizontal: 50.0,
+                  ),
+                  child: TextField(
+                    keyboardType: TextInputType.number,
+                    style: TextStyle(fontSize: 18.0),
+                    controller: textEditingController,
+                    decoration: InputDecoration(
+                      hintText: 'Enter the amount',
                     ),
                   ),
-                  onPressed: () {
-                    openCheckOut();
-                    setState(() {
-                      textEditingController.clear();
-                    });
-                  },
                 ),
-              ),
-              SizedBox(
-                height: 30.0,
-              ),
-              Text(
-                'If you want to make your contribution by directly donating grains, pulses, clothes, etc., you can directly contact us and our team will reach your home to pick them up. Click the button below to head over to the Contacts Page.',
-                style: TextStyle(
-                  fontSize: 18.0,
-                ),
-              ),
-              SizedBox(
-                height: 10.0,
-              ),
-              Container(
-                child: RaisedButton(
-                  color: Color(0xFF84EFD5),
-                  child: Text(
-                    'Contacts Page',
-                    style: TextStyle(
-                      fontSize: 18.0,
-                      color: Color(0xFF11212F),
-                    ),
-                  ),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => ContactUs(),
+                SizedBox(height: 10.0),
+                Container(
+                  child: RaisedButton(
+                    color: Color(0xFF84EFD5),
+                    child: Text(
+                      'Donate',
+                      style: TextStyle(
+                        fontSize: 18.0,
+                        color: Color(0xFF11212F),
                       ),
-                    );
-                  },
+                    ),
+                    onPressed: () {
+                      openCheckOut();
+                      setState(() {
+                        textEditingController.clear();
+                      });
+                    },
+                  ),
                 ),
-              ),
-              SizedBox(
-                height: 30.0,
-              ),
-              Text(
-                'Thanks a lot for your valuable donation 🙏',
-                style: TextStyle(
-                  fontSize: 20.0,
+                SizedBox(
+                  height: 30.0,
                 ),
-              ),
-            ],
+                Text(
+                  'If you want to make your contribution by directly donating grains, pulses, clothes, etc., you can directly contact us and our team will reach your home to pick them up. Click the button below to head over to the Contacts Page.',
+                  style: TextStyle(
+                    fontSize: 18.0,
+                  ),
+                ),
+                SizedBox(
+                  height: 10.0,
+                ),
+                Container(
+                  child: RaisedButton(
+                    color: Color(0xFF84EFD5),
+                    child: Text(
+                      'Contacts Page',
+                      style: TextStyle(
+                        fontSize: 18.0,
+                        color: Color(0xFF11212F),
+                      ),
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ContactUs(),
+                        ),
+                      );
+                    },
+                  ),
+                ),
+                SizedBox(
+                  height: 30.0,
+                ),
+                Text(
+                  'Thanks a lot for your valuable donation 🙏',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
