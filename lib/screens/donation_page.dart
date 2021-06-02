@@ -64,6 +64,19 @@ class DonationPage extends StatelessWidget {
               SizedBox(
                 height: 10.0,
               ),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                  horizontal: 50.0,
+                ),
+                child: TextField(
+                  keyboardType: TextInputType.number,
+                  style: TextStyle(fontSize: 18.0),
+                  decoration: InputDecoration(
+                    hintText: 'Enter the amount',
+                  ),
+                ),
+              ),
+              SizedBox(height: 10.0),
               Container(
                 child: RaisedButton(
                   color: Color(0xFF84EFD5),
@@ -110,7 +123,7 @@ class DonationPage extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 50.0,
+                height: 30.0,
               ),
               Text(
                 'Thanks a lot for your valuable donation 🙏',
