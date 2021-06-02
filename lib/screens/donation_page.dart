@@ -32,7 +32,7 @@ class _DonationPageState extends State<DonationPage> {
           "rzp_test_H1x4nD096VNKaL", //this was the text key, when developing the actual productionable app, generate live mode
       "amount": num.parse(textEditingController.text) * 100,
       "name": "WE CARE",
-      "description": "Payment for some random product",
+      "description": "Donation for We Care Organisation",
       "prefill": {
         "contact": "",
         "email": "",
@@ -156,6 +156,7 @@ class _DonationPageState extends State<DonationPage> {
                       openCheckOut();
                       setState(() {
                         textEditingController.clear();
+                        Navigator.pop(context);
                       });
                     },
                   ),
