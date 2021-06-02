@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:do_good_flutter/screens/contact_us.dart';
 
 class DonationPage extends StatelessWidget {
   @override
@@ -98,7 +99,14 @@ class DonationPage extends StatelessWidget {
                       color: Color(0xFF11212F),
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ContactUs(),
+                      ),
+                    );
+                  },
                 ),
               ),
               SizedBox(
