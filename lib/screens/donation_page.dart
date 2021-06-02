@@ -10,7 +10,7 @@ class DonationPage extends StatefulWidget {
 
 class _DonationPageState extends State<DonationPage> {
   Razorpay razorpay;
-
+  TextEditingController textEditingController = new TextEditingController();
   @override
   void initState() {
     super.initState();
@@ -24,6 +24,33 @@ class _DonationPageState extends State<DonationPage> {
   void dispose() {
     super.dispose();
     razorpay.clear();
+  }
+
+  void openCheckOut() {
+    var options = {
+      "key": "",
+      "amount": textEditingController.text,
+      "description": "Payment for some random product",
+      "prefill": {
+        "contact": "",
+        "email": "",
+      },
+      "external": {
+        "wallets": ["paytm"],
+      }
+    };
+  }
+
+  void handlerPaymentSuccess() {
+    print('PAYMENT SUCCESSFUL');
+  }
+
+  void handlerErrorFailure() {
+    print('PAYMENT DECLINED');
+  }
+
+  void handlerExternalWallet() {
+    print('EXTERNAL WALLET SELECTED');
   }
 
   @override
@@ -95,6 +122,7 @@ class _DonationPageState extends State<DonationPage> {
                 child: TextField(
                   keyboardType: TextInputType.number,
                   style: TextStyle(fontSize: 18.0),
+                  controller: textEditingController,
                   decoration: InputDecoration(
                     hintText: 'Enter the amount',
                   ),
