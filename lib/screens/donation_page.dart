@@ -56,7 +56,7 @@ class DonationPage extends StatelessWidget {
                 height: 30.0,
               ),
               Text(
-                'If you want to make your contribution through money, click the button below.',
+                'If you want to make your contribution through money, enter the amount and click the button below and you will be taken to the payments gateway.',
                 style: TextStyle(
                   fontSize: 18.0,
                 ),
@@ -68,7 +68,7 @@ class DonationPage extends StatelessWidget {
                 child: RaisedButton(
                   color: Color(0xFF84EFD5),
                   child: Text(
-                    'Monetary Donation',
+                    'Donate',
                     style: TextStyle(
                       fontSize: 18.0,
                       color: Color(0xFF11212F),
@@ -93,7 +93,7 @@ class DonationPage extends StatelessWidget {
                 child: RaisedButton(
                   color: Color(0xFF84EFD5),
                   child: Text(
-                    'Other Donations',
+                    'Contacts Page',
                     style: TextStyle(
                       fontSize: 18.0,
                       color: Color(0xFF11212F),
