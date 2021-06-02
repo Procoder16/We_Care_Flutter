@@ -28,8 +28,10 @@ class _DonationPageState extends State<DonationPage> {
 
   void openCheckOut() {
     var options = {
-      "key": "",
-      "amount": textEditingController.text,
+      "key":
+          "rzp_test_H1x4nD096VNKaL", //this was the text key, when developing the actual productionable app, generate live mode
+      "amount": num.parse(textEditingController.text) * 100,
+      "name": "WE CARE",
       "description": "Payment for some random product",
       "prefill": {
         "contact": "",
@@ -39,18 +41,27 @@ class _DonationPageState extends State<DonationPage> {
         "wallets": ["paytm"],
       }
     };
+
+    try {
+      razorpay.open(options);
+    } catch (e) {
+      print(e.toString());
+    }
   }
 
   void handlerPaymentSuccess() {
     print('PAYMENT SUCCESSFUL');
+    Toast.show('PAYMENT SUCCESSFUL', context);
   }
 
   void handlerErrorFailure() {
     print('PAYMENT DECLINED');
+    Toast.show('PAYMENT DECLINED', context);
   }
 
   void handlerExternalWallet() {
     print('EXTERNAL WALLET SELECTED');
+    Toast.show('EXTERNAL WALLET SELECTED', context);
   }
 
   @override
@@ -139,7 +150,12 @@ class _DonationPageState extends State<DonationPage> {
                       color: Color(0xFF11212F),
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    openCheckOut();
+                    setState(() {
+                      textEditingController.clear();
+                    });
+                  },
                 ),
               ),
               SizedBox(
