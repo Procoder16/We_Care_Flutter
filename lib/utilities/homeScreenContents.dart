@@ -19,7 +19,11 @@ class HomeScreenContents extends StatelessWidget {
                 padding: EdgeInsets.only(left: 5.0),
                 child: Text(
                   'Our recent activities...',
-                  style: TextStyle(fontSize: 25.0),
+                  style: TextStyle(
+                    fontSize: 30.0,
+                    fontFamily: 'Kaushan',
+                    color: Color(0xFF84EFD5),
+                  ),
                 ),
               ),
               Padding(
