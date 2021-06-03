@@ -39,11 +39,13 @@ class _HomeScreenState extends State<HomeScreen> {
           backgroundColor: Color(0xFF84EFD5),
           centerTitle: true,
           title: Text(
-            'Home Page',
+            'We Care',
             style: TextStyle(
+              fontFamily: 'Kaushan',
+              fontSize: 45.0,
               color: Color(0xFF11212F),
-              fontSize: 22.0,
             ),
+            textAlign: TextAlign.center,
           ),
         ),
         body: FoldableSidebarBuilder(
