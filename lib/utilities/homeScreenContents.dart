@@ -50,11 +50,11 @@ class HomeScreenContents extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
-                                '20/05/2020',
+                                '26/05/2021',
                                 style: kCardsText,
                               ),
                               Text(
-                                'Barrackpore',
+                                'Digha',
                                 style: kCardsText,
                               ),
                             ],
@@ -64,7 +64,7 @@ class HomeScreenContents extends StatelessWidget {
                           padding: EdgeInsets.symmetric(
                               vertical: 5.0, horizontal: 5.0),
                           child: Text(
-                            'This was the first such activity ',
+                            'The cyclone Yaas devastated many lives in and around Digha this time. We could only help them by giving them food and that\'s what we did. We donated food to them who lost their houses and families during the calamity.',
                             style: kCardsText,
                           ),
                         ),
@@ -97,7 +97,7 @@ class HomeScreenContents extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
-                                '20/05/2021',
+                                '17/04/2021',
                                 style: kCardsText,
                               ),
                               Text(
@@ -111,7 +111,7 @@ class HomeScreenContents extends StatelessWidget {
                           padding: EdgeInsets.symmetric(
                               vertical: 5.0, horizontal: 5.0),
                           child: Text(
-                            'jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj',
+                            'This time we organised a plasma donation camp where covid recovered patients can come forward voluntarily to donate their plasma to help the ones who need it. To our surprise too, there were more than 250 donors who came up.',
                             style: kCardsText,
                           ),
                         ),
@@ -144,11 +144,11 @@ class HomeScreenContents extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
-                                '20/05/2021',
+                                '16/03/2021',
                                 style: kCardsText,
                               ),
                               Text(
-                                'Barrackpore',
+                                'Kolkata',
                                 style: kCardsText,
                               ),
                             ],
@@ -158,7 +158,7 @@ class HomeScreenContents extends StatelessWidget {
                           padding: EdgeInsets.symmetric(
                               vertical: 5.0, horizontal: 5.0),
                           child: Text(
-                            'jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj',
+                            'We held another clothes donation drive but this time it was for the people of Kolkata who cannot afford if for them. We donated clothes to more than 200 FAMILIES this time.',
                             style: kCardsText,
                           ),
                         ),
