@@ -41,7 +41,7 @@ class HomeScreenContents extends StatelessWidget {
                         Padding(
                           padding: EdgeInsets.symmetric(horizontal: 5.0),
                           child: Image(
-                            image: AssetImage('images/mask.png'),
+                            image: AssetImage('images/food2.png'),
                           ),
                         ),
                         Padding(
@@ -50,7 +50,7 @@ class HomeScreenContents extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
-                                '20/05/2021',
+                                '20/05/2020',
                                 style: kCardsText,
                               ),
                               Text(
@@ -64,7 +64,7 @@ class HomeScreenContents extends StatelessWidget {
                           padding: EdgeInsets.symmetric(
                               vertical: 5.0, horizontal: 5.0),
                           child: Text(
-                            'jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj',
+                            'This was the first such activity ',
                             style: kCardsText,
                           ),
                         ),
@@ -323,7 +323,7 @@ class HomeScreenContents extends StatelessWidget {
                         Padding(
                           padding: EdgeInsets.symmetric(horizontal: 5.0),
                           child: Image(
-                            image: AssetImage('images/food2.png'),
+                            image: AssetImage('images/mask.png'),
                           ),
                         ),
                         Padding(
@@ -332,7 +332,7 @@ class HomeScreenContents extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
-                                '20/05/2021',
+                                '20/05/2020',
                                 style: kCardsText,
                               ),
                               Text(
