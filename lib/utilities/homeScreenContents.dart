@@ -88,7 +88,7 @@ class HomeScreenContents extends StatelessWidget {
                         Padding(
                           padding: EdgeInsets.symmetric(horizontal: 5.0),
                           child: Image(
-                            image: AssetImage('images/food1.png'),
+                            image: AssetImage('images/bloodD.png'),
                           ),
                         ),
                         Padding(
@@ -191,11 +191,11 @@ class HomeScreenContents extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
-                                '20/05/2021',
+                                '01/01/2021',
                                 style: kCardsText,
                               ),
                               Text(
-                                'Barrackpore',
+                                'Sodepur',
                                 style: kCardsText,
                               ),
                             ],
@@ -205,7 +205,7 @@ class HomeScreenContents extends StatelessWidget {
                           padding: EdgeInsets.symmetric(
                               vertical: 5.0, horizontal: 5.0),
                           child: Text(
-                            'jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj',
+                            'We started our new year with some noble work. We donated sanitary pads to those disadvantaged society that do not know the utility and necessity of sanitary pads.',
                             style: kCardsText,
                           ),
                         ),
@@ -238,11 +238,11 @@ class HomeScreenContents extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
-                                '20/05/2021',
+                                '05/09/2020',
                                 style: kCardsText,
                               ),
                               Text(
-                                'Barrackpore',
+                                'Howrah',
                                 style: kCardsText,
                               ),
                             ],
@@ -252,7 +252,7 @@ class HomeScreenContents extends StatelessWidget {
                           padding: EdgeInsets.symmetric(
                               vertical: 5.0, horizontal: 5.0),
                           child: Text(
-                            'jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj',
+                            'This clothes donation drive targeted such population from Howrah and we donated clothes and blankets so that they can atleast have something to wear in the coming winter.',
                             style: kCardsText,
                           ),
                         ),
@@ -276,7 +276,7 @@ class HomeScreenContents extends StatelessWidget {
                         Padding(
                           padding: EdgeInsets.symmetric(horizontal: 5.0),
                           child: Image(
-                            image: AssetImage('images/bloodD.png'),
+                            image: AssetImage('images/food1.png'),
                           ),
                         ),
                         Padding(
@@ -285,7 +285,7 @@ class HomeScreenContents extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
-                                '20/05/2021',
+                                '16/07/2020',
                                 style: kCardsText,
                               ),
                               Text(
@@ -299,7 +299,7 @@ class HomeScreenContents extends StatelessWidget {
                           padding: EdgeInsets.symmetric(
                               vertical: 5.0, horizontal: 5.0),
                           child: Text(
-                            'jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj',
+                            'This was our first food drive that we held feeding over 200+ people who cannot even afford their food during the pandemic last year.',
                             style: kCardsText,
                           ),
                         ),
@@ -346,7 +346,7 @@ class HomeScreenContents extends StatelessWidget {
                           padding: EdgeInsets.symmetric(
                               vertical: 5.0, horizontal: 5.0),
                           child: Text(
-                            'jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj',
+                            'This was out first such activity and we started as a team. We donated hand sanitizers and mask to over 100 people in and around Barrackpore Station.',
                             style: kCardsText,
                           ),
                         ),
