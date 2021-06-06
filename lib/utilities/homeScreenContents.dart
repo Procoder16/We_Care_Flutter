@@ -54,7 +54,7 @@ class HomeScreenContents extends StatelessWidget {
                                 style: kCardsText,
                               ),
                               Text(
-                                'Kolkata',
+                                'Digha',
                                 style: kCardsText,
                               ),
                             ],
