@@ -54,7 +54,7 @@ class HomeScreenContents extends StatelessWidget {
                                 style: kCardsText,
                               ),
                               Text(
-                                'Digha',
+                                'Kolkata',
                                 style: kCardsText,
                               ),
                             ],
@@ -111,7 +111,7 @@ class HomeScreenContents extends StatelessWidget {
                           padding: EdgeInsets.symmetric(
                               vertical: 5.0, horizontal: 5.0),
                           child: Text(
-                            'This time we organised a plasma donation camp where covid recovered patients can come forward voluntarily to donate their plasma to help the ones who need it. To our surprise too, there were more than 250 donors who came up.',
+                            'This time we organised a plasma donation camp where covid recovered people can come forward voluntarily to donate their plasma to help the ones who need it. To our surprise too, there were more than 250 donors who came up.',
                             style: kCardsText,
                           ),
                         ),
