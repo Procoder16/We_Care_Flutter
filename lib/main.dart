@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:do_good_flutter/screens/home_screen.dart';
 import 'dart:async';
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:do_good_flutter/screens/login_screen.dart';
 
 void main() {
   runApp(
@@ -36,7 +37,7 @@ class _SplashScreenState extends State<SplashScreen> {
       () {
         Navigator.of(context).pushReplacement(
           MaterialPageRoute(
-            builder: (_) => HomeScreen(),
+            builder: (_) => LoginScreen(),
           ),
         );
       },
