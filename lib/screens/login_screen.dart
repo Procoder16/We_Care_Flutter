@@ -10,7 +10,7 @@ class LoginScreen extends StatelessWidget {
     final TextEditingController _otpController = TextEditingController();
 
     void sendOTP() async {
-      EmailAuth.sessionName = "Test Session";
+      EmailAuth.sessionName = "We Care";
       var res = await EmailAuth.sendOtp(receiverMail: _emailController.text);
       if (res) {
         print('OTP SENT');
