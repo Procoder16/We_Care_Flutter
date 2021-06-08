@@ -18,34 +18,67 @@ class LoginScreen extends StatelessWidget {
         ),
       ),
       body: SafeArea(
-        child: Container(
-          child: Padding(
-            padding: EdgeInsets.only(left: 15.0),
-            child: Column(
-              children: [
-                Text(
-                  'Hey There!!! 😃',
-                  style: TextStyle(
-                    fontSize: 80.0,
-                    fontFamily: 'Kaushan',
-                  ),
-                ),
-                Text(
-                  'Click the button below to verify your Google Account 👇',
-                  style: TextStyle(fontSize: 20.0),
-                ),
-                RaisedButton(
-                  child: Text(
-                    'Tap to verify',
+        child: SingleChildScrollView(
+          child: Container(
+            child: Padding(
+              padding: EdgeInsets.only(left: 15.0),
+              child: Column(
+                children: [
+                  Text(
+                    'Hey There!!! 😃',
                     style: TextStyle(
-                      color: Color(0xFF11212F),
-                      fontSize: 20.0,
+                      fontSize: 80.0,
+                      fontFamily: 'Kaushan',
                     ),
                   ),
-                  color: Color(0xFF84EFD5),
-                  onPressed: () {},
-                ),
-              ],
+                  SizedBox(
+                    height: 30.0,
+                  ),
+                  TextField(
+                    decoration: InputDecoration(
+                      hintText: 'Enter Your Email Id',
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10.0,
+                  ),
+                  RaisedButton(
+                    color: Color(0xFF84EFD5),
+                    child: Text(
+                      'Send OTP',
+                      style: TextStyle(
+                        color: Color(0xFF11212F),
+                        fontSize: 20.0,
+                      ),
+                    ),
+                    onPressed: () {
+                      print('OTP Sent');
+                    },
+                  ),
+                  SizedBox(
+                    height: 10.0,
+                  ),
+                  TextField(
+                    decoration: InputDecoration(
+                      hintText: 'Enter the OTP',
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10.0,
+                  ),
+                  RaisedButton(
+                    child: Text(
+                      'Tap to verify',
+                      style: TextStyle(
+                        color: Color(0xFF11212F),
+                        fontSize: 20.0,
+                      ),
+                    ),
+                    color: Color(0xFF84EFD5),
+                    onPressed: () {},
+                  ),
+                ],
+              ),
             ),
           ),
         ),
