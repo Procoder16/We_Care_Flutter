@@ -6,6 +6,17 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        backgroundColor: Color(0xFF84EFD5),
+        title: Text(
+          'User Authentication',
+          style: TextStyle(
+            fontSize: 22.0,
+            color: Color(0xFF11212F),
+          ),
+        ),
+      ),
       body: SafeArea(
         child: Container(
           child: Padding(
@@ -13,9 +24,9 @@ class LoginScreen extends StatelessWidget {
             child: Column(
               children: [
                 Text(
-                  'User Authentication',
+                  'Hey There!!! 😃',
                   style: TextStyle(
-                    fontSize: 50.0,
+                    fontSize: 80.0,
                     fontFamily: 'Kaushan',
                   ),
                 ),
