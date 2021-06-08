@@ -16,6 +16,7 @@ dependencies:
   razorpay_flutter: ^1.2.1
   toast: ^0.1.5
   google_sign_in: ^4.0.2
+  email_auth: ^0.0.1
 
 
   cupertino_icons: ^1.0.2
