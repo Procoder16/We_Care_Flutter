@@ -124,6 +124,18 @@ class LoginScreen extends StatelessWidget {
                       );
                     },
                   ),
+                  RaisedButton(
+                    child: Text(
+                      'Tap to verify',
+                      style: TextStyle(
+                        color: Color(0xFF11212F),
+                        fontSize: 20.0,
+                      ),
+                    ),
+                    color: Color(0xFF84EFD5),
+                    onPressed: () {
+                    },
+                  ),
                 ],
               ),
             ),
