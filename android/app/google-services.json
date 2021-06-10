@@ -1,20 +1,20 @@
 {
   "project_info": {
-    "project_number": "802841957440",
-    "project_id": "we-care-16609",
-    "storage_bucket": "we-care-16609.appspot.com"
+    "project_number": "940442542816",
+    "project_id": "we-care-bd80e",
+    "storage_bucket": "we-care-bd80e.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:802841957440:android:a9c9522358450e83cf3ba5",
+        "mobilesdk_app_id": "1:940442542816:android:5370b2a51ab7af0a37e685",
         "android_client_info": {
           "package_name": "com.example.do_good_flutter"
         }
       },
       "oauth_client": [
         {
-          "client_id": "802841957440-l9djohng65bi1ctvuh782g7sqa11bp7u.apps.googleusercontent.com",
+          "client_id": "940442542816-2f7anfl464dd0ncrvfucjninicohr9ha.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.do_good_flutter",
@@ -22,20 +22,20 @@
           }
         },
         {
-          "client_id": "802841957440-bdupgkt6ioh4msjk9fivvo1fas1sie25.apps.googleusercontent.com",
+          "client_id": "940442542816-sh7mk7evg91ud7dllcai6dejejc0o5ud.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCttY_ifVYv7d5X9h2E9648BfHIIFyx9sA"
+          "current_key": "AIzaSyABBYDNxWMC0gKZJ9vgoZcuD5EkjN_M7HA"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "802841957440-bdupgkt6ioh4msjk9fivvo1fas1sie25.apps.googleusercontent.com",
+              "client_id": "940442542816-sh7mk7evg91ud7dllcai6dejejc0o5ud.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
