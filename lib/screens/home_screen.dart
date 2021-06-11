@@ -77,13 +77,13 @@ class CustomDrawer extends StatelessWidget {
       color: Color(0xFF84EFD5),
       width: mediaQuery.size.width * 0.60,
       height: mediaQuery.size.height,
-      child: Column(
-        children: <Widget>[
-          SizedBox(
-            height: 20.0,
-          ),
-          Expanded(
-            child: Container(
+      child: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            SizedBox(
+              height: 20.0,
+            ),
+            Container(
               width: double.infinity,
               height: 200,
               color: Colors.grey.withAlpha(20),
@@ -110,104 +110,105 @@ class CustomDrawer extends StatelessWidget {
                 ],
               ),
             ),
-          ),
-          SizedBox(
-            height: 30.0,
-          ),
-          ListTile(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => OurMotto(),
-                ),
-              );
-              closeDrawer();
-            },
-            leading: Icon(
-              Icons.info_outlined,
+            SizedBox(
+              height: 30.0,
+            ),
+            ListTile(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => OurMotto(),
+                  ),
+                );
+                closeDrawer();
+              },
+              leading: Icon(
+                Icons.info_outlined,
+                color: Color(0xFF11212F),
+                size: 30.0,
+              ),
+              title: Text(
+                "About Us",
+                style: kSideBarText,
+              ),
+            ),
+            Divider(
+              height: 1,
               color: Color(0xFF11212F),
-              size: 30.0,
             ),
-            title: Text(
-              "About Us",
-              style: kSideBarText,
+            ListTile(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => OurTeam(),
+                  ),
+                );
+                closeDrawer();
+              },
+              leading: Icon(
+                Icons.people,
+                color: Color(0xFF11212F),
+                size: 30.0,
+              ),
+              title: Text(
+                "Our Team",
+                style: kSideBarText,
+              ),
             ),
-          ),
-          Divider(
-            height: 1,
-            color: Color(0xFF11212F),
-          ),
-          ListTile(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => OurTeam(),
-                ),
-              );
-              closeDrawer();
-            },
-            leading: Icon(
-              Icons.people,
+            Divider(
+              height: 1,
               color: Color(0xFF11212F),
-              size: 30.0,
             ),
-            title: Text(
-              "Our Team",
-              style: kSideBarText,
+            ListTile(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ContactUs(),
+                  ),
+                );
+                closeDrawer();
+              },
+              leading: Icon(
+                Icons.business_rounded,
+                color: Color(0xFF11212F),
+                size: 30.0,
+              ),
+              title: Text(
+                "Contact Us",
+                style: kSideBarText,
+              ),
             ),
-          ),
-          Divider(
-            height: 1,
-            color: Color(0xFF11212F),
-          ),
-          ListTile(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => ContactUs(),
-                ),
-              );
-              closeDrawer();
-            },
-            leading: Icon(
-              Icons.business_rounded,
+            Divider(
+              height: 1,
               color: Color(0xFF11212F),
-              size: 30.0,
             ),
-            title: Text(
-              "Contact Us",
-              style: kSideBarText,
+            ListTile(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => DevelopersPage(),
+                  ),
+                );
+                closeDrawer();
+              },
+              leading: Icon(
+                Icons.person,
+                color: Color(0xFF11212F),
+                size: 30.0,
+              ),
+              title: Text(
+                "Developer's Page",
+                style: kSideBarText,
+              ),
             ),
-          ),
-          Divider(
-            height: 1,
-            color: Color(0xFF11212F),
-          ),
-          ListTile(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => DevelopersPage(),
-                ),
-              );
-              closeDrawer();
-            },
-            leading: Icon(
-              Icons.person,
-              color: Color(0xFF11212F),
-              size: 30.0,
+            SizedBox(
+              height: 50.0,
             ),
-            title: Text(
-              "Developer's Page",
-              style: kSideBarText,
-            ),
-          ),
-          Expanded(
-            child: Column(
+            Column(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 FlatButton(
@@ -234,8 +235,8 @@ class CustomDrawer extends StatelessWidget {
                 ),
               ],
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
