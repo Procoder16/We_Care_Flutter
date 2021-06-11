@@ -355,6 +355,25 @@ class HomeScreenContents extends StatelessWidget {
                   ),
                 ),
               ),
+              SizedBox(
+                height: 20.0,
+              ),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                  horizontal: 10.0,
+                ),
+                child: Text(
+                  'Part of being a person is about helping others...',
+                  style: TextStyle(
+                    fontFamily: "Kaushan",
+                    fontSize: 20.0,
+                    color: Color(0xFF84EFD5),
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 80.0,
+              ),
             ],
           ),
         ],
