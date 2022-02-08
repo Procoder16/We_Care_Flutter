@@ -7,7 +7,6 @@ import 'package:foldable_sidebar/foldable_sidebar.dart';
 import 'package:do_good_flutter/utilities/homeScreenContents.dart';
 import 'package:do_good_flutter/utilities/constants.dart';
 import 'package:do_good_flutter/screens/developers_page.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
